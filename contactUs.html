@@ -17,6 +17,8 @@
 
         td {
             font-family: cursive;
+            border: 2px black;
+            border-radius: 2px;
         }
 
         p {
@@ -24,11 +26,17 @@
             padding-bottom: 10PX;
             background-color: rgb(204, 4, 104);
             font-family: 'Dancing Script', cursive;
-            color: blue;
+            color: rgb(8, 8, 8);
             size: 50px;
         }
-        #sb{background-color: deeppink;}
-    </style>
+        #sb{}
+        input[type="text"],input[type="email"],textarea{border: 1px;border-radius: 5px;}
+        input[type="submit"]{color: rgb(33, 27, 37);
+        background-color: rgb(255, 0, 170);}
+        input[type="reset"]{color: rgb(33, 27, 37);
+        background-color: rgb(255, 0, 170);}
+   
+   </style>
 
 
 </head>
@@ -37,30 +45,30 @@
     <p>Contact Us</p><br>
     <table>
         <tr>
-            <td> Name :</td>
-            <td><input type="text"></td>
+            <td><label>Name</label>  :</td>
+            <td><input type="text" placeholder="Capital Letter only" required autofocus maxlength="10"></td>
         </tr>
         <tr>
-            <td> Contact No : </td>
-            <td><input type="text"></td>
+            <td><label>Contact No :</label>  </td>
+            <td><input type="text" placeholder="Digit only" required autofocus maxlength="10"></td>
         </tr>
         <tr>
-            <td> Email ID :</td>
-            <td><input type="email"></td>
+            <td><label>Email ID :</label> </td>
+            <td><input type="email" placeholder="" required autofocus maxlength="10"></td>
         </tr>
         <tr>
-            <td> Current Adress :</td>
-            <td><input type="text"></td>
+            <td><lable>Current Adress :</lable> </td>
+            <td><textarea rows="5px" ></textarea></td>
             </tr>
 
             <tr>     
                    <td> Delicery Adress :</td>
-                   <td><input type="text"></td>
+                   <td><textarea rows="5px"></textarea></td>
 </tr>
 
 <tr>     
-       <td id="sb"><input type="submit"></td>
-       <td id="sb"><input type="reset"></td>
+       <td><input type="submit"></td>
+       <td><input type="reset"></td>
 </tr>
     </table>
     <br>
